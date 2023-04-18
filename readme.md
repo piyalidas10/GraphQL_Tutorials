@@ -1,3 +1,10 @@
+### Run each Lesson
+```
+cd Lesson_V1
+npm start
+```
+it will open http://localhost:4000
+
 ### GraphQL tutorial in Hindi
 https://www.youtube.com/playlist?list=PLB97yPrFwo5i9zDrWfvkohPec3Q6EEC9J
 
