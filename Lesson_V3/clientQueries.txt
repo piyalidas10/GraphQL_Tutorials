@@ -1,0 +1,203 @@
+
+**************************************************************************************
+{
+  users{
+    id
+    name
+  }
+}
+
+{
+  "data": {
+    "users": [
+      {
+        "id": "001",
+        "name": "test1"
+      },
+      {
+        "id": "002",
+        "name": "test2"
+      },
+      {
+        "id": "003",
+        "name": "test3"
+      }
+    ]
+  }
+}
+
+**************************************************************************************
+query getQuotes is optional
+
+query getQuotes{
+  quotes{
+    name
+  }
+}
+
+{
+  "data": {
+    "quotes": [
+      {
+        "name": "id labore ex et quam laborum"
+      },
+      {
+        "name": "Complete GraphQL tutorial with React and Apollo Client"
+      },
+      {
+        "name": "quo vero reiciendis velit similique earum"
+      }
+    ]
+  }
+}
+
+
+**************************************************************************************
+{
+  users{
+    id
+    name
+    quotes{
+      name
+    }
+  }
+}
+
+{
+  "data": {
+    "users": [
+      {
+        "id": "001",
+        "name": "test1",
+        "quotes": [
+          {
+            "name": "id labore ex et quam laborum"
+          },
+          {
+            "name": "Complete GraphQL tutorial with React and Apollo Client"
+          }
+        ]
+      },
+      {
+        "id": "002",
+        "name": "test2",
+        "quotes": [
+          {
+            "name": "quo vero reiciendis velit similique earum"
+          }
+        ]
+      },
+      {
+        "id": "003",
+        "name": "test3",
+        "quotes": []
+      }
+    ]
+  }
+}
+
+
+
+**************************************************************************************
+query getUserById{
+  user(id: "002"){
+    name
+    email
+    quotes{
+      name
+    }
+  }
+}
+
+{
+  "data": {
+    "user": {
+      "name": "test2",
+      "email": "test2.gmail.com",
+      "quotes": [
+        {
+          "name": "quo vero reiciendis velit similique earum"
+        }
+      ]
+    }
+  }
+}
+
+
+**************************************************************************************
+query getQuoteByUserID{
+  iquote(by: "001"){
+    name
+  }
+}
+
+-----------------
+{
+  "data": {
+    "iquote": [
+      {
+        "name": "id labore ex et quam laborum"
+      },
+      {
+        "name": "Complete GraphQL tutorial with React and Apollo Client"
+      }
+    ]
+  }
+}
+
+
+**************************************************************************************
+query getUserById($userID:ID!){
+  user(id: $userID){
+    name
+    email
+    quotes{
+      name
+    }
+  }
+}
+
+{
+  "userID": "002"
+}
+
+-----------------
+{
+  "data": {
+    "user": {
+      "name": "test2",
+      "email": "test2.gmail.com",
+      "quotes": [
+        {
+          "name": "quo vero reiciendis velit similique earum"
+        }
+      ]
+    }
+  }
+}
+
+
+**************************************************************************************
+query getQuoteByUserID($quoteBy:ID!){
+  iquote(by: $quoteBy){
+    name
+  }
+}
+
+{
+  "quoteBy": "001"
+}
+
+-----------------
+{
+  "data": {
+    "iquote": [
+      {
+        "name": "id labore ex et quam laborum"
+      },
+      {
+        "name": "Complete GraphQL tutorial with React and Apollo Client"
+      }
+    ]
+  }
+}

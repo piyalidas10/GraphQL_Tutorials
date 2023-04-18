@@ -1,0 +1,50 @@
+
+**************************************************************************************
+mutation createUserMut($userNew:UserInput!){
+  user: createUser(userNew: $userNew){
+    name
+    address
+    email
+  }
+}
+
+-----------------
+{
+  "data": {
+    "createUser": {
+      "name": "Bill Gates",
+      "address": "USA",
+      "email": "bill@gmail.com"
+    }
+  }
+}
+
+
+
+**************************************************************************************
+mutation createUserMut($userNew:UserInput!){
+  user: createUser(userNew: $userNew){
+    name
+    address
+    email
+  }
+}
+
+{
+  "userNew": {
+    "name": "Bill Gates",
+    "address": "USA",
+    "email": "bill@gmail.com"
+	}
+}
+
+-----------------
+{
+  "data": {
+    "createUser": {
+      "name": "Bill Gates",
+      "address": "USA",
+      "email": "bill@gmail.com"
+    }
+  }
+}

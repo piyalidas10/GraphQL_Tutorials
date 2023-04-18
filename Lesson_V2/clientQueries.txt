@@ -1,0 +1,17 @@
+
+
+{
+  users{
+    id
+    name
+  }
+}
+
+-----------------------------------------------------------------
+query getQuotes is optional
+
+query getQuotes{
+  quotes{
+    name
+  }
+}
