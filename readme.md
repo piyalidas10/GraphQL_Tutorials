@@ -23,3 +23,7 @@ https://www.youtube.com/watch?v=MLNnKFxua8E&list=PLB97yPrFwo5i9zDrWfvkohPec3Q6EE
 #### Lesson V4
 4 Mutation, Input Type and Aliases | Complete GraphQL tutorial with React and Apollo Client in Hindi
 https://www.youtube.com/watch?v=GieVHRrcR-U&list=PLB97yPrFwo5i9zDrWfvkohPec3Q6EEC9J&index=6
+
+#### Lesson_MongDB_Connect
+#5 Add MongoDB and creating Model | Complete GraphQL tutorial with React and Apollo Client in Hindi
+https://www.youtube.com/watch?v=WyVwfUo18pI&list=PLB97yPrFwo5i9zDrWfvkohPec3Q6EEC9J&index=7

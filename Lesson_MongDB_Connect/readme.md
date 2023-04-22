@@ -1,7 +1,7 @@
 ## Add MongoDB and creating Model | Complete GraphQL tutorial
 https://www.youtube.com/watch?v=WyVwfUo18pI&list=PLB97yPrFwo5i9zDrWfvkohPec3Q6EEC9J&index=7
 
-## Run Application
+## Run Application Nodejs
 ```
 npm start
 ```
